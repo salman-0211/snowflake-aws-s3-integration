@@ -28,6 +28,24 @@ This repository documents a small end-to-end demo: connecting Snowflake (hosted 
 ## Security notes
 - Do **not** commit AWS secrets, Snowflake passwords, or any external_id/ARNs. Use placeholders in the repo and redact screenshots before posting publicly.
 
+
+
+### Snowflake Integration
+![Snowflake Integration](screenshots/snowflake_integration.png)
+
+### AWS IAM Trust
+![IAM Trust](screenshots/iam_trust.png)
+
+### S3 Bucket
+![S3 Bucket](screenshots/s3_bucket.png)
+
+### Snowflake Stage Data
+![Snowflake Stage](screenshots/snowflake_stage.png)
+
+### Excel Pivot Report
+![Excel Report](screenshots/excel_report.png)
+
+
 ## Contact / Author
 Mohd Salman Baba — Snowflake + AWS S3 demo.
 
