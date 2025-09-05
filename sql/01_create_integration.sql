@@ -1,0 +1,12 @@
+-- Create storage integration for S3
+USE ROLE ACCOUNTADMIN;
+
+CREATE OR REPLACE STORAGE INTEGRATION S3_INT
+  TYPE = EXTERNAL_STAGE
+  STORAGE_PROVIDER = S3
+  ENABLED = TRUE
+  STORAGE_ALLOWED_LOCATIONS = ('s3://<your-bucket-name>/')
+  STORAGE_AWS_ROLE_ARN = '<your-iam-role-arn>'
+  COMMENT = 'Demo S3 integration for Snowflake';
+
+DESC INTEGRATION S3_INT;
